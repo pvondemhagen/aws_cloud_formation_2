@@ -18,9 +18,9 @@ jobs:
     name: 'pc'
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v2
-        with:
-            fetch-depth: 0
-      - name: Run yor action
+    - name: Checkout repo
+      uses: actions/checkout@v2
+      with:
+        fetch-depth: 0
+    - name: Run yor action
       uses: bridgecrewio/yor-action@main
